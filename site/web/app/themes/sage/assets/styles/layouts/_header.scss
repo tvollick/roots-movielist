@@ -1,0 +1,66 @@
+.page-header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  z-index: 1;
+  background-color: $blue-light;
+
+  h1 {
+    padding: 100px 0;
+    color: white;
+  }
+}
+.page-header_large {
+  z-index: 2;
+  position: relative;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+  h1 {
+    color: #fff;
+  }
+
+}
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 161.8%;
+  background : {
+    color: $blue;
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  };
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100vw,
+    38.198% 100%,
+    0 calc(100% - 38.198vw)
+  );
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $purple;
+    opacity: 0.55;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 61.8%;
+    clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    69.1% 50%,
+    38.2% 100%,
+    0 38.2%
+    )
+  }
+}

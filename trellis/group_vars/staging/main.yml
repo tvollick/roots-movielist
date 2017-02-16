@@ -1,0 +1,3 @@
+www_root: /data/www/sites
+env: staging
+web_user: web

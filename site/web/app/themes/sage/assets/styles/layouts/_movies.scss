@@ -1,0 +1,45 @@
+.movies-list {
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+
+.movie-cover-wrapper {
+  position: relative;
+  background: {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  };
+
+  &:before {
+    display: block;
+    content: '';
+    padding-bottom: 133%;
+  }
+  @include media-breakpoint-up(sm) {
+    width: 33%;
+  }
+
+  @include media-breakpoint-up(md) {
+    float: left;
+  }
+}
+
+.movie-content {
+  @include media-breakpoint-up(md) {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.movie-genres {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  .genre {
+    display: block;
+    float: left;
+  }
+}

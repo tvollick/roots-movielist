@@ -1,0 +1,47 @@
+# Application
+site/web/app/plugins/*
+!site/web/app/plugins/.gitkeep
+!site/web/app/plugins/advanced-custom-fields-pro
+site/web/app/mu-plugins/*/
+site/web/app/upgrade
+site/web/app/uploads/*
+!site/web/app/uploads/.gitkeep
+
+# WordPress
+site/web/wp
+site/web/.htaccess
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Vendor (e.g. Composer)
+site/vendor/*
+!site/vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+trellis/bin
+trellis/.vagrant
+trellis/vendor
+trellis/dev.retry
+trellis/*.log
+
+# Sage
+dist
+bower_components
+node_modules
+npm-debug.log
+
+# Do NOT push ansible-vault passwords to git
+.vault*
+
+# OSX File System Cruft
+.DS_Store
